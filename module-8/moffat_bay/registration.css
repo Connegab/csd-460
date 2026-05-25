@@ -1,0 +1,198 @@
+/**
+ * Team Charlie
+ * Team Members: Paul Fralix, James Brown III, Gabriel Conner, Alexis Mitchell, Hlee Xiong
+ * Moffat Bay Lodge
+ * CSD460 Capstone in Software Development
+ */
+
+/* FILE: register.css */
+
+/* 1. Universal Reset & Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+    
+    background: url('images/image_6.jpg') no-repeat center center fixed;
+    background-size: cover;
+   
+    
+    /* Fallback color if image fails */
+    background-color: #e5dac7; 
+}
+
+h2, .lodge-header .logo, .register-button {
+    font-family: 'Lora', serif;
+    font-weight: 600;
+}
+
+/* 2. Header  */
+.lodge-header {
+    background: linear-gradient(to right, #2a1f18, #402f25); 
+    color: #e5dac7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    height: 80px;
+    z-index: 10; /* Keeps header above the background */
+}
+
+.lodge-header .logo {
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #fff;
+}
+
+.header-right .login-button {
+    background-color: #c9a35e; 
+    color: #312117;
+    padding: 10px 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+/* 3. Main Registration Wrapper */
+.registration-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    
+    background: rgba(0, 0, 0, 0.2); 
+}
+
+.registration-form-box {
+    background: rgba(255, 255, 255, 0.96); 
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 500px;
+    backdrop-filter: blur(5px); 
+}
+
+.registration-form-box h2 {
+    color: #2a1f18;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.registration-form-box p {
+    color: #555;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+/* 4. Form Field Styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #312117;
+    font-size: 13px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family: inherit;
+    background-color: #fff;
+}
+
+input:focus {
+    border-color: #c9a35e; 
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(201, 163, 94, 0.2);
+}
+
+/* 5. Buttons & Links */
+.register-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #2a1f18;
+    color: #e5dac7;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-button:hover {
+    background-color: #402f25;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #444;
+}
+
+.login-link a {
+    color: #c9a35e;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* 6. Footer */
+.lodge-footer {
+    background: #2a1f18;
+    color: #e5dac7;
+    padding: 20px;
+    text-align: center;
+    font-size: 11px;
+}
+
+.msg {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 13px;
+}
+.msg-error { background-color: #f8d7da; color: #721c24; }
+.msg-success { background-color: #d4edda; color: #155724; }
